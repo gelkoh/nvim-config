@@ -33,10 +33,10 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- Disable highlighting of all search matches after a search
-vim.opt.hlsearch = false
+opt.hlsearch = false
 
 -- Enable incremental search
-vim.opt.incsearch = true
+opt.incsearch = true
 
 --------------------------------------------------------------------------------
 -- Appearance
@@ -61,7 +61,7 @@ opt.guicursor = "n-v-i-c:block-Cursor"
 --------------------------------------------------------------------------------
 
 -- Always show minimum of 8 lines above/below cursor while scrolling
-vim.opt.scrolloff = 8
+opt.scrolloff = 8
 
 --------------------------------------------------------------------------------
 -- Commenting
@@ -75,13 +75,18 @@ cmd([[autocmd FileType * set formatoptions-=ro]])
 --------------------------------------------------------------------------------
 
 -- Disable creation of swap files
-vim.opt.swapfile = false
+opt.swapfile = false
 
 -- Disable creation of backup files
-vim.opt.backup = false
+opt.backup = false
 
 -- Enable persistent undo
-vim.opt.undofile = true
+opt.undofile = true
 
 -- Set where to store undo history files
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+--------------------------------------------------------------------------------
+-- Clipboard
+--------------------------------------------------------------------------------
+opt.clipboard = "unnamedplus"
