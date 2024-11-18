@@ -25,3 +25,8 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 
 -- For finding the string the cursor is on inside the project
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
+
+--------------------------------------------------------------------------------
+-- Nvim tree
+--------------------------------------------------------------------------------
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
