@@ -21,5 +21,10 @@ return {
         config = function()
             require("nvim-tree").setup {}
         end
+    },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
     }
 }
