@@ -5,6 +5,9 @@ local config = wezterm.config_builder()
 config.font = wezterm.font("MonoLisa")
 config.font_size = 16.0
 
+-- Disable ligatures
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
+
 -- Disable title bar
 config.window_decorations = "RESIZE"
 
